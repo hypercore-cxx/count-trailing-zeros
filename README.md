@@ -5,12 +5,15 @@ Counts the number of trailing zeros for an integer in binary.
 # EXAMPLE
 
 ```c++
+#include "deps/datcxx/cxx-count-trailing-zeros/index.hxx"
+#include <iostream>
+
 for (size_t i=1; i <= 16; ++i) {
   auto n = Hypercore::ctz(i);
   auto d = std::bitset<sizeof(i)>(i);
 
   cout << i
-    << " (bin " << x << ") has "
+    << " (bin " << d << ") has "
     << std::to_string(n) << " trailing zeros"
     << std::endl;
 }
