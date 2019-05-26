@@ -3,7 +3,7 @@
   "description": "Counts the number of trailing zeros for an integer in binary.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:datcxx/cxx-count-trailing-zeros.git"
+    "url": "git@github.com:datcxx/count-trailing-zeros.git"
   },
   "devDependencies": {
     "git@github.com:heapwolf/cxx-tap": "07821de0"
