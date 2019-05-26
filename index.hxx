@@ -3,8 +3,10 @@
 
 #include <stddef.h>
 
-namespace Hypercore {
-  size_t ctz (size_t v);
-}
+namespace Hyper {
+  namespace Core {
+    size_t ctz (size_t v);
+  } // namespace Core
+} // namespace Hyper
 
 #endif

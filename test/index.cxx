@@ -13,19 +13,19 @@ int main() {
   });
 
   t.test("ctz", [] (auto t) {
-    t->equal(Hypercore::ctz(0), 32);
-    t->equal(Hypercore::ctz(1), 0);
-    t->equal(Hypercore::ctz(-1), 0);
+    t->equal(Hyper::Core::ctz(0), 32);
+    t->equal(Hyper::Core::ctz(1), 0);
+    t->equal(Hyper::Core::ctz(-1), 0);
 
     for (size_t i=0; i < 31; ++i) {
-      t->equal(Hypercore::ctz(1<<i), i);
+      t->equal(Hyper::Core::ctz(1<<i), i);
 
       if (i > 0) {
-        t->equal(Hypercore::ctz((1<<i)-1), 0);
+        t->equal(Hyper::Core::ctz((1<<i)-1), 0);
       }
     }
 
-    t->equal(Hypercore::ctz(0xf81700), 8);
+    t->equal(Hyper::Core::ctz(0xf81700), 8);
     t->end();
   });
 
@@ -52,7 +52,7 @@ int main() {
     std::stringstream ss;
 
     for (int i=1; i <= 16; ++i) {
-      auto n = Hypercore::ctz(i);
+      auto n = Hyper::Core::ctz(i);
       auto d = std::bitset<sizeof(i)>(i);
 
       ss << i
