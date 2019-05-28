@@ -1,7 +1,7 @@
 #include "index.hxx"
 
 namespace Hyper {
-  namespace Core {
+  namespace Util {
     size_t ctz (size_t v) {
       size_t c = 32;
       v &= -v;
